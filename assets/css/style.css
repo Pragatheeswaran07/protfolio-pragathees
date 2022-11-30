@@ -1,0 +1,255 @@
+@keyframes color-change {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: green;
+    }
+  }
+  @keyframes box-change {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  .contact-box {
+    
+    background-color: lightblue;
+  }
+  
+  
+  
+  
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  a {
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+  
+  .header {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header--menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .header--menu--items {
+    margin-right: 5rem;
+  }
+  .header--menu--items a {
+    color: #242424;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
+  .header--menu--items a::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0px;
+    left: 0px;
+    bottom: -10px;
+    background-color: rgb(51, 92, 138);
+  }
+  .header--menu--items a:hover::after {
+    transition: 0.2s;
+    width: 100%;
+  }
+  .header--menu--items a:hover {
+    color: blue;
+  }
+  
+  .chg--color {
+    transition: 500ms;
+    animation: color-change 10s infinite;
+  }
+  
+  .btn--menu {
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    outline: none;
+    display: inline-block;
+    background-color: rgb(116, 109, 219);
+  }
+  .btn--menu:hover {
+    background-color: greenyellow;
+  }
+  
+  .home--page {
+    padding: 5rem 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  img {
+    width: 400px;
+    height: 300px;
+    border-radius: 70px;
+  }
+  
+  .box1 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid blue;
+    position: relative;
+    top: -10px;
+    left: 50px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .box2 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(158, 52, 135);
+    position: relative;
+    top: -10px;
+    left: 50px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .box3 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(90, 189, 98);
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .box4 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(90, 189, 98);
+    position: relative;
+    top: 100px;
+    left: 10px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(129, 199, 82);
+    position: relative;
+    border-radius: 50%;
+    top: 80%;
+    right: 2rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(5, 20, 90);
+    position: relative;
+    border-radius: 50%;
+    bottom: 90%;
+    left: 1rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .dot3 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(158, 52, 135);
+    position: relative;
+    border-radius: 50%;
+    top: -10px;
+    left: 50px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .dot4 {
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgb(184, 101, 101);
+    position: relative;
+    border-radius: 50%;
+    top: 100px;
+    left: 0px;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-change linear 5s infinite;
+  }
+  
+  .about-img {
+    width: 100%;
+    height: 600px;
+    padding: 1rem;
+    background-color: whitesmoke;
+  }
+  .about-img h1 {
+    color: red;
+  }
+  
+  .project-info {
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+    
+  }
+  
+  .contact-box {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(252, 247, 249);
+  }
+  .home{
+    width:100%;
+    height: 600px;
+    background-color: aliceblue;
+  }
+  
+  .col-12:hover{
+    box-shadow: 8px 8px 15px rgba(0,0,0,.4);
+    transition: .2s;
+  }
+  .card{
+    box-shadow: 8px 8px rgba(0, 0,0, 0.2);
+  }
+  .photo2{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+  }
+  /*# sourceMappingURL=main.css.map */
+  
